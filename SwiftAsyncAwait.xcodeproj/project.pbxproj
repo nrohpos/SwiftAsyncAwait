@@ -16,6 +16,9 @@
 		5264745F28FE53B70071B571 /* SwiftAsyncAwaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264745E28FE53B70071B571 /* SwiftAsyncAwaitTests.swift */; };
 		5264746928FE53B70071B571 /* SwiftAsyncAwaitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264746828FE53B70071B571 /* SwiftAsyncAwaitUITests.swift */; };
 		5264746B28FE53B70071B571 /* SwiftAsyncAwaitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264746A28FE53B70071B571 /* SwiftAsyncAwaitUITestsLaunchTests.swift */; };
+		5264747828FE57170071B571 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264747728FE57170071B571 /* DataModel.swift */; };
+		5264747A28FE58190071B571 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264747928FE58190071B571 /* ViewModel.swift */; };
+		5264747C28FE5F520071B571 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5264747B28FE5F520071B571 /* DataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5264746428FE53B70071B571 /* SwiftAsyncAwaitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAsyncAwaitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5264746828FE53B70071B571 /* SwiftAsyncAwaitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAsyncAwaitUITests.swift; sourceTree = "<group>"; };
 		5264746A28FE53B70071B571 /* SwiftAsyncAwaitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAsyncAwaitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5264747728FE57170071B571 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5264747928FE58190071B571 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5264747B28FE5F520071B571 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				5264745028FE53B70071B571 /* Assets.xcassets */,
 				5264745228FE53B70071B571 /* LaunchScreen.storyboard */,
 				5264745528FE53B70071B571 /* Info.plist */,
+				5264747728FE57170071B571 /* DataModel.swift */,
+				5264747928FE58190071B571 /* ViewModel.swift */,
+				5264747B28FE5F520071B571 /* DataRepository.swift */,
 			);
 			path = SwiftAsyncAwait;
 			sourceTree = "<group>";
@@ -258,7 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5264747A28FE58190071B571 /* ViewModel.swift in Sources */,
 				5264744C28FE53B60071B571 /* ViewController.swift in Sources */,
+				5264747828FE57170071B571 /* DataModel.swift in Sources */,
+				5264747C28FE5F520071B571 /* DataRepository.swift in Sources */,
 				5264744828FE53B60071B571 /* AppDelegate.swift in Sources */,
 				5264744A28FE53B60071B571 /* SceneDelegate.swift in Sources */,
 			);
@@ -445,6 +457,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +465,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nrohpos.SwiftAsyncAwait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,6 +489,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +497,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nrohpos.SwiftAsyncAwait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
